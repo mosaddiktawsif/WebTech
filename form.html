@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Saver Blood Donation Program</title>
+
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    background-color: rgb(250, 204, 204) ;
+ }
+ header h1 {
+    margin-bottom: 20px;
+    text-align: center;
+ }
+header h3 {
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+}
+.bgForm1, .bgForm2 {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+.bgForm1 h2, .bgForm2 h2 {
+        margin-bottom: 10px;
+        font-size: 25px;
+}
+.bgForm1 .form1 , .bgForm2 .form2 {
+ padding-left: 40px;
+}
+.bgForm1 .form1 legend, .bgForm2 .form2 legend {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.bgForm1 .form1 label, .bgForm2 .form2 label {
+    font-size: 18px;
+    font-weight: 30px;
+}
+
+.bgForm1 button, .bgForm2 button{
+    background-color: rgb(158, 243, 243);
+    size: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Life Saver Blood Donation Program</h1>
+        <h3>Life saver blood donation program is a social working arena which was created by some AIUB students. The main slogan of this program is "Save Life, Donate Blood".</h3> 
+    </header>
+    <main>
+        <section class="bgForm1">
+            <h2>Blood Donor Registration Form</h2>
+            <form action="#" method="post">
+                <fieldset class="form1">
+                    <legend>Donor Information</legend>
+
+                    <label for="donor-name">Full Name :</label>
+                    <input type="text" id="donor-name" name="donor_name" required> <br> <br>    
+
+                    <label for="donor-age">Age :</label>
+                    <input type="number" id="donor-age" name="donor_age" min="18" max="65" required> <br><br>
+
+                    <label for="donor-gender">Gender :</label>
+                    <select name="donor_genger" id="donor-gender" required>
+                        <option value="">Please Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select> <br><br>
+
+                    <label for="blood-group">Blood Group :</label>
+                    <select name="blood_group" id="blood-group" required>
+                        <option value="">Please Select</option>
+                        <option value="A+">A+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select> <br><br>
+
+                    <label for="phone-number">Mobile :</label>
+                    <input type="tel" id="phone-number" name="phone_number" required> <br><br>
+
+                    <label for="donor-email">Email :</label>
+                    <input type="email" id="donor-email" name="donor_email" required> <br><br>
+
+                    <label for="last-donation-date">Last Donation Date :</label>
+                    <input type="date" id="last-donation-date" name="last_donation_date"> <br> <br>
+
+                    <label for="health-condition"> Health Condition :</label>
+                    <textarea name="health_condition" id="health-condition" placeholder="Any regarding health issues"></textarea>
+
+                </fieldset>
+                <br>
+
+                <button type="submit">Register as Donor</button><br><br>
+                <button type="reset">Clear Form</button><br><br>
+            </form>
+        </section>
+
+         <section class="bgForm2">
+            <h2>Blood Request Form</h2>
+            <form action="#" method="post">
+                <fieldset class="form2">
+                     <legend>Request Blood</legend>
+
+                    <label for="patient-name">Patient Name :</label>
+                    <input type="text" id="patient-name" name="patient_name" required> <br> <br>    
+
+                    <label for="blood-group">Required Blood :</label>
+                    <select name="blood_group" id="blood-group" required>
+                        <option value="">Please Select</option>
+                        <option value="A+">A+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select> <br><br>
+
+                    <label for="hospital-name">Hospital Name :</label>
+                    <input type="text" id="hospital-name" name="hospital_name" required> <br> <br>
+
+                    <label for="emergency-number">Mobile :</label>
+                    <input type="tel" id="emergency-number" name="emergency_number" required> <br><br>
+
+                    <label for="require-date">Blood Require Date :</label>
+                    <input type="date" id="require-date" name="require_date"> <br> <br>
+                    
+                    <label for="additional-info"> Additional Information :</label>
+                    <textarea name="additional_info" id="additional-info" placeholder="Any addtional information"></textarea>
+
+                </fieldset>
+                 <br>
+
+                <button type="submit">Submit Request</button><br><br>
+                <button type="reset">Clear Form</button><br><br>
+            </form>
+         </section>
+    </main>
+      
+</body>
+</html>
